@@ -1,1 +1,63 @@
+/* Add this to your existing StyleSheet.css */
 
+/* NAV BAR STYLES */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.center-nav {
+    text-align: center;
+}
+
+.left-nav {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.right-nav {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.profile-photo {
+    width: 40px;
+    height: 40px;
+    background-color: #ddd; /* Placeholder color */
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 600px) {
+    .topnav a, .center-nav, .left-nav, .right-nav {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        display: block;
+    }
+
+    .left-nav, .right-nav {
+        position: static;
+        margin-top: 10px;
+    }
+
+    .profile-photo {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
