@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/StyleSheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Your Sustainability Website</title>
+</head>
+<body>
+    <!-- NAV BAR -->
+    <div class="topnav" id="myTopnav">
+        <a href="" class="active">Company Name</a>
+        <div class="center-nav">
+            <a href="AboutUs.html">About Us</a>
+            <a href="Articles.html">Articles</a>
+            <a href="GetInvolved.html">Get Involved</a>
+            <a href="Contact.html">Contact Us</a>
+        </div>
+        <div class="left-nav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div class="right-nav">
+            <!-- Mock Search Bar -->
+            <input type="text" placeholder="Search...">
+            <!-- Profile Photo -->
+            <div class="profile-photo"></div>
+        </div>
+    </div>
+    
+    <!-- Your existing content -->
+    <div class="index_header">
+        <div class="title_container">
+            <h1 class="title" style="font-size: 35px;">Lorem ipsum dolor sit amet</h1>
+        </div>
+    </div>
 
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+</html>
