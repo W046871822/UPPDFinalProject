@@ -3,12 +3,14 @@
 /* NAV BAR STYLES */
 .topnav {
     overflow: hidden;
-    background-color: transparent; /* background color to transparent */
-    position: relative;
+    background-color: rgba(0, 0, 0, 0.84);
+    position: fixed;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 2; /* higher z-index to make it overlap */
+    z-index: 2; /* Set a higher z-index */
+    overflow: hidden;
 }
 
 .topnav a {
