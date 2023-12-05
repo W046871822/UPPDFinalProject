@@ -11,6 +11,7 @@
     align-items: center;
     z-index: 2; /* Set a higher z-index */
     overflow: hidden;
+    width: 100%;
 }
 
 .topnav a {
