@@ -3,7 +3,7 @@
 /* NAV BAR STYLES */
 .topnav {
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.84);
+    background-color: rgba(0, 0, 0, 0.6);
     position: fixed;
     top: 0;
     display: flex;
@@ -29,7 +29,23 @@
 }
 
 .center-nav {
-    display: none;
+    display: flex;
+    flex-direction: column; /* Display links in a column */
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1;
+}
+
+.center-nav a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: 17px;
 }
 
 .profile-photo {
@@ -48,26 +64,12 @@
 @media screen and (max-width: 1000px) {
     .center-nav {
         display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background-color: #333;
-        z-index: 1;
-    }
-
-    .center-nav a {
-        display: block;
-        text-align: center;
     }
 
     .topnav.responsive .center-nav {
         display: flex;
     }
 }
-
-
 
 .index-header {
     width: 100%;
@@ -82,4 +84,3 @@
     bottom: 10px;
     left: 10px;
 }
-
