@@ -145,6 +145,7 @@ body {
 .article-aside {
     position: fixed;
     top: calc(45vh + 20px);
+    bottom: 0;
     right: 0;
     width: 300px;
     background-color: #fff;
