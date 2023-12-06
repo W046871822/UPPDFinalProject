@@ -112,19 +112,20 @@ body {
     margin-right: 20px;
 }
 
-/* Recent Articles Styles */
-.recent-articles {
+/* Article Aside Styles */
+.article-aside {
     position: fixed;
-    top: 20%;
-    right: 5%;
+    top: 20px;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    background-color: #fff;
+    border-top-left-radius: 20px;
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow effect */
 }
 
-.article {
-    background-color: #fff;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-}
 
 /* Adjustments for smaller screens */
 @media screen and (max-width: 1000px) {
@@ -137,13 +138,10 @@ body {
         margin-bottom: 20px;
     }
 
-    .recent-articles {
+    .article-aside {
         position: static; /* Reset position for smaller screens */
-        margin-top: 20px;
-    }
-
-    .article {
-        width: 100%; /* Make articles full-width on smaller screens */
+        width: 100%; /* Make aside full-width on smaller screens */
+        border-top-left-radius: 0; /* Remove border radius on smaller screens */
     }
 }
 
