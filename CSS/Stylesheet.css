@@ -2,7 +2,7 @@
 
 body { 
     font-family: 'Montserrat', sans-serif;
-    background-color: rgb(233, 225, 217);
+    background-color: rgb(232, 228, 225);
     }
 
 /* NAV BAR STYLES */
@@ -76,6 +76,10 @@ body {
     }
 }
 
+
+
+
+
 .index-header {
     width: 100%;
     height: 45vh;
@@ -88,3 +92,58 @@ body {
     bottom: 10px;
     left: 10px;
 }
+
+
+
+
+
+/* Content Carousel Styles */
+.content-carousel {
+    display: flex;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.carousel-item {
+    flex: 0 0 25%; /* Display 4 items at a time */
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #fff;
+    margin-right: 20px;
+}
+
+/* Recent Articles Styles */
+.recent-articles {
+    position: fixed;
+    top: 20%;
+    right: 5%;
+}
+
+.article {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 1000px) {
+    .content-carousel {
+        flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    }
+
+    .carousel-item {
+        flex: 0 0 48%; /* Display 2 items at a time on smaller screens */
+        margin-bottom: 20px;
+    }
+
+    .recent-articles {
+        position: static; /* Reset position for smaller screens */
+        margin-top: 20px;
+    }
+
+    .article {
+        width: 100%; /* Make articles full-width on smaller screens */
+    }
+}
+

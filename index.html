@@ -3,31 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainability Website</title>
+    <link rel="icon" type="image/png" href="path/to/favicon.png">
     <link rel="stylesheet" href="CSS/Stylesheet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Sustainability Website</title>
 </head>
 <body>
     <!-- NAV BAR -->
     <div class="topnav" id="myTopnav">
-        <div class="left-nav">
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </div>
-        <a href="" class="active">Company Name</a>
-        <div class="center-nav" id="centerNav">
-            <a href="AboutUs.html">About Us</a>
-            <a href="Articles.html">Articles</a>
-            <a href="GetInvolved.html">Get Involved</a>
-            <a href="Contact.html">Contact Us</a>
-        </div>
-        <div class="right-nav">
-            <!-- Mock Search Bar -->
-            <input type="text" placeholder="Search..." class="search-bar">
-            <!-- Profile Photo -->
-            <div class="profile-photo"></div>
-        </div>
+        <!-- ... (your existing nav code) ... -->
     </div>
 
     <!-- Index Header -->
@@ -37,7 +21,35 @@
         </div>
     </div>
 
+    <!-- Content Carousel -->
+    <div class="content-carousel">
+        <div class="carousel-item">Content 1</div>
+        <div class="carousel-item">Content 2</div>
+        <div class="carousel-item">Content 3</div>
+        <div class="carousel-item">Content 4</div>
+        <div class="carousel-item">Content 5</div>
+        <div class="carousel-item">Content 6</div>
+        <div class="carousel-item">Content 7</div>
+        <div class="carousel-item">Content 8</div>
+    </div>
+
+    <!-- Recent Articles Section -->
+    <div class="recent-articles">
+        <div class="article">
+            <h3>Recent Article 1</h3>
+            <p>Article summary...</p>
+            <button>Click me</button>
+        </div>
+        <div class="article">
+            <h3>Recent Article 2</h3>
+            <p>Article summary...</p>
+            <button>Click me</button>
+        </div>
+        <!-- Add more articles as needed -->
+    </div>
+
     <script>
+        // Your existing script for the navigation bar
         function myFunction() {
             var x = document.getElementById("centerNav");
             if (x.style.display === "block") {
