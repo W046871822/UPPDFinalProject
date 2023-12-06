@@ -34,8 +34,8 @@ body {
 }
 
 .center-nav {
-    display: flex;
-    flex-direction: column; /* Display links in a column */
+    display: none; /* Updated to make it hidden by default */
+    flex-direction: column;
     position: absolute;
     top: 60px;
     left: 0;
@@ -43,6 +43,7 @@ body {
     background-color: #333;
     z-index: 1;
 }
+
 
 .center-nav a {
     display: block;
