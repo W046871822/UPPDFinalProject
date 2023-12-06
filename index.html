@@ -30,13 +30,15 @@
         <div class="profile-photo"></div>
     </div>
 </div>
-    <!-- Index Header -->
-    <div class="index-header" style="background: url('https://images.unsplash.com/photo-1634688215810-ac046bac67ea?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat 50% 50%; background-size: cover;">
-        <div class="title-container">
-            <h1 class="title" style="color: #fff; font-size: 60px; margin-left: 30px; margin-bottom: 20px;">Lorem ipsum dolor sit amet</h1>
-        </div>
+<!-- Index Header -->
+<div class="index-header" style="background: url('https://images.unsplash.com/photo-1634688215810-ac046bac67ea?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat 50% 50%; background-size: cover;">
+    <div class="title-container">
+        <h1 class="title" style="color: #fff; font-size: 60px; margin-left: 30px; margin-bottom: 20px;">Lorem ipsum dolor sit amet</h1>
     </div>
+</div>
 
+<!-- Carousel Container -->
+<div class="carousel-container">
     <!-- Content Carousel -->
     <div class="content-carousel">
         <div class="carousel-item">Content 1</div>
@@ -48,8 +50,14 @@
         <div class="carousel-item">Content 7</div>
         <div class="carousel-item">Content 8</div>
     </div>
+    <!-- Navigation Arrows -->
+    <div class="carousel-arrows">
+        <div class="arrow left-arrow">&#9664;</div>
+        <div class="arrow right-arrow">&#9654;</div>
+    </div>
+</div>
 
-   <!-- Article Aside -->
+<!-- Article Aside -->
 <aside class="article-aside">
     <h2>Recent Articles</h2>
     <div class="article">
@@ -65,17 +73,16 @@
     <!-- Add more articles as needed -->
 </aside>
 
-
-    <script>
-        // Your existing script for the navigation bar
-        function myFunction() {
-            var x = document.getElementById("centerNav");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
+<script>
+    // Your existing script for the navigation bar
+    function myFunction() {
+        var x = document.getElementById("centerNav");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
         }
-    </script>
+    }
+</script>
 </body>
 </html>

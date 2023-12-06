@@ -96,52 +96,67 @@ body {
 
 
 
+/* Carousel Container Styles */
+.carousel-container {
+    position: relative;
+}
 
 /* Content Carousel Styles */
 .content-carousel {
     display: flex;
     overflow: hidden;
     margin-top: 20px;
+    margin-right: 320px; /* Adjusted to leave space for the aside and arrows */
 }
 
 .carousel-item {
-    flex: 0 0 25%; /* Display 4 items at a time */
+    flex: 0 0 25%;
     padding: 20px;
     border-radius: 15px;
     background-color: #fff;
     margin-right: 20px;
 }
 
+/* Navigation Arrows Styles */
+.carousel-arrows {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arrow {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.left-arrow {
+    margin-bottom: 10px;
+}
+
+.right-arrow {
+    margin-top: 10px;
+}
+
 /* Article Aside Styles */
 .article-aside {
     position: fixed;
-    top: calc(45vh + 20px); /* Adjusted to add space between the header and the aside */
+    top: calc(45vh + 20px);
     right: 0;
     width: 300px;
     background-color: #fff;
-    border-top-left-radius: 20px; /* Rounded corner on the top-left */
+    border-top-left-radius: 20px;
     overflow-y: auto;
     padding: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-
-
 /* Adjustments for smaller screens */
 @media screen and (max-width: 1000px) {
     .content-carousel {
-        flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-    }
-
-    .carousel-item {
-        flex: 0 0 48%; /* Display 2 items at a time on smaller screens */
-        margin-bottom: 20px;
-    }
-
-    .article-aside {
-        position: static; /* Reset position for smaller screens */
-        width: 100%; /* Make aside full-width on smaller screens */
-        border-top-left-radius: 0; /* Remove border radius on smaller screens */
+        margin-right: 0;
     }
 }
-
