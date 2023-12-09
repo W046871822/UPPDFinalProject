@@ -107,12 +107,11 @@ body {
     display: flex;
     overflow: hidden;
     margin-top: 20px;
-    margin-right: 320px; /* Adjusted to leave space for the aside and arrows */
+    margin-right: 0; /* Removed padding */
 }
 
 .carousel-item {
     flex: 0 0 25%;
-    padding: 20px;
     border-radius: 15px;
     margin-right: 20px;
     position: relative;
@@ -137,6 +136,7 @@ body {
     border-bottom-left-radius: 15px;
 }
 
+
 /* Adjustments for smaller screens */
 @media screen and (max-width: 1000px) {
     .content-carousel {
@@ -153,7 +153,7 @@ body {
 
 /* Article Aside Styles */
 .article-aside {
-    position: fixed;
+    position: absolute;
     top: calc(45vh + 20px);
     bottom: 0;
     right: 0;
@@ -168,7 +168,19 @@ body {
 /* Adjustments for smaller screens */
 @media screen and (max-width: 1000px) {
     .content-carousel {
+        flex-wrap: wrap;
+    }
+
+    .carousel-item {
+        flex: 0 0 100%;
         margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .article-aside {
+        position: static;
+        width: 100%;
+        margin-top: 20px;
     }
 }
 
