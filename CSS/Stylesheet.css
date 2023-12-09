@@ -135,10 +135,22 @@ body {
     color: #fff;
     border-bottom-left-radius: 15px;
 }
+/* Adjust the height of the carousel items */
+.carousel-inner .item {
+    height: 300px;
+}
+
+/* Add padding to the right to leave room for the aside */
+.carousel-container {
+    padding-right: 320px; /* Adjusted to leave space for the aside */
+}
 
 
 /* Adjustments for smaller screens */
 @media screen and (max-width: 1000px) {
+    .carousel-container {
+        padding-right: 0; /* Remove padding on smaller screens */
+    }
     .content-carousel {
         margin-right: 0;
     }
