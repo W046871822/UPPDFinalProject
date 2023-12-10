@@ -3,6 +3,7 @@
 body { 
     font-family: 'Montserrat', sans-serif;
     background-color: rgb(232, 228, 225);
+    z-index: 1;
     }
 
 /* NAV BAR STYLES */
@@ -136,6 +137,7 @@ body {
     background: rgba(0, 0, 0, 0.5); /* Translucent background */
     color: #fff;
     border-bottom-left-radius: 15px;
+    z-index: 3;
 }
 
 /* Adjust the height of the carousel items */
