@@ -111,11 +111,14 @@ body {
 }
 
 .carousel-item {
-    flex: 0 0 25%;
+    flex: 0 0 15%; /* Adjusted width */
+    max-width: 150px; /* Added maximum width */
+    height: 150px; /* Adjusted height */
     border-radius: 15px;
     margin-right: 20px;
     position: relative;
     overflow: hidden;
+    border-radius: 10px;
 }
 
 .carousel-item img {
