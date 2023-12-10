@@ -118,7 +118,6 @@ body {
     margin-right: 20px;
     position: relative;
     overflow: hidden;
-    border-radius: 10px;
 }
 
 .carousel-item img {
@@ -126,7 +125,6 @@ body {
     height: 100%;
     object-fit: cover;
     border-radius: 15px;
-    border-radius: 10px;
 }
 
 .carousel-item .content-header {
@@ -134,11 +132,12 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: 10px;
+    padding: 5px; /* Adjusted padding */
     background: rgba(0, 0, 0, 0.5); /* Translucent background */
     color: #fff;
     border-bottom-left-radius: 15px;
 }
+
 /* Adjust the height of the carousel items */
 .carousel-inner .item {
     height: 300px;
