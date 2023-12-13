@@ -98,11 +98,6 @@ body {
 
 
 
-/* Carousel Container Styles */
-.carousel-container {
-    position: relative;
-}
-
 /* Content Carousel Styles */
 .content-carousel {
     display: flex;
@@ -112,9 +107,7 @@ body {
 }
 
 .carousel-item {
-    flex: 0 0 15%; /* Adjusted width */
-    max-width: 150px; /* Added maximum width */
-    height: 150px; /* Adjusted height */
+    flex: 0 0 25%;
     border-radius: 15px;
     margin-right: 20px;
     position: relative;
@@ -133,29 +126,15 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: 5px; /* Adjusted padding */
+    padding: 10px;
     background: rgba(0, 0, 0, 0.5); /* Translucent background */
     color: #fff;
     border-bottom-left-radius: 15px;
-    z-index: 3;
-}
-
-/* Adjust the height of the carousel items */
-.carousel-inner .item {
-    height: 300px;
-}
-
-/* Add padding to the right to leave room for the aside */
-.carousel-container {
-    padding-right: 320px; /* Adjusted to leave space for the aside */
 }
 
 
 /* Adjustments for smaller screens */
 @media screen and (max-width: 1000px) {
-    .carousel-container {
-        padding-right: 0; /* Remove padding on smaller screens */
-    }
     .content-carousel {
         margin-right: 0;
     }
@@ -166,6 +145,7 @@ body {
         transform: translateY(-50%);
     }
 }
+
 
 
 /* Article Aside Styles */
