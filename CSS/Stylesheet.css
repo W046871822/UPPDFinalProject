@@ -36,7 +36,7 @@ body {
 
 .center-nav {
     display: none; /* Updated to make it hidden by default */
-    flex-direction: column;
+    flex-direction: row; /* Updated to make it horizontal */
     position: absolute;
     top: 60px;
     left: 0;
@@ -70,11 +70,20 @@ body {
 /* Responsive styles for smaller screens */
 @media screen and (max-width: 1000px) {
     .center-nav {
-        display: none;
+        position: static;
+        flex-direction: column;
+        display: none; /* Updated to hide by default */
+        background-color: rgba(0, 0, 0, 0.6); /* Set the background for stacked items */
+        width: 100%;
+        text-align: center; /* Center the stacked items */
     }
 
     .topnav.responsive .center-nav {
         display: flex;
+    }
+
+    .left-nav {
+        justify-content: center; /* Center the company name/logo */
     }
 }
 
