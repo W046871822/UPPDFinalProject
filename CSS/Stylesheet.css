@@ -3,6 +3,7 @@
 body { 
     font-family: 'Montserrat', sans-serif;
     background-color: rgb(232, 228, 225);
+    color: #fff;
     z-index: 1;
     }
 
@@ -28,7 +29,7 @@ button {
 /* NAV BAR STYLES */
 .topnav {
     overflow: hidden;
-    background-color: #4966006d;
+    background-color: #323f106d;
     position: fixed;
     top: 0;
     display: flex;
@@ -149,7 +150,7 @@ button {
     left: 0;
     width: 100%;
     padding: 10px;
-    background: rgba(0, 0, 0, 0.5); /* Translucent background */
+    background: #2127128a; /* Translucent background */
     color: #fff;
     border-bottom-left-radius: 15px;
 }
@@ -185,7 +186,8 @@ button {
     bottom: 0;
     right: 0;
     width: 300px;
-    background-color: #2a3f24;
+    background-color: #2d3b21;
+    color: #fff;
     border-top-left-radius: 20px;
     overflow-y: auto;
     padding: 20px;
