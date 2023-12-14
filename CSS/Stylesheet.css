@@ -126,7 +126,7 @@ button {
     display: flex;
     overflow: hidden;
     margin-top: 20px;
-    margin-right: 0; /* Removed padding */
+    margin-left: 0; /* Removed padding */
     max-width: 1000px; /* Set max-width for the carousel */
     margin-left: auto; /* Center the carousel under 1000px */
 }
@@ -134,7 +134,7 @@ button {
 .carousel-item {
     flex: 0 0 calc(25% - 10px); /* Adjusted width with 10px spacing */
     border-radius: 15px;
-    margin-right: 20px;
+    margin-left: 20px;
     margin-bottom: 20px; /* Added margin between rows */
     position: relative;
     overflow: hidden;
