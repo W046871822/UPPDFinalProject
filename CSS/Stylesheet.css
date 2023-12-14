@@ -8,6 +8,11 @@ body {
 
 a {
     text-decoration: none;
+    color: #006633;
+}
+
+h1, h2, h3 {
+    color: #333; /* Darker text color for headings */
 }
 
 button {
@@ -23,7 +28,7 @@ button {
 /* NAV BAR STYLES */
 .topnav {
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: #006633;
     position: fixed;
     top: 0;
     display: flex;
@@ -35,7 +40,7 @@ button {
 }
 
 .topnav a {
-    color: #f2f2f2;
+    color: #fff;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -46,17 +51,6 @@ button {
 .left-nav, .center-nav, .right-nav {
     display: flex;
     align-items: center;
-}
-
-.center-nav {
-    display: none; /* Updated to make it hidden by default */
-    flex-direction: row; /* Updated to make it horizontal */
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background-color: #333;
-    z-index: 1;
 }
 
 
@@ -72,7 +66,8 @@ button {
 .profile-photo {
     width: 40px;
     height: 40px;
-    background-color: #ddd; /* Placeholder color */
+    background-color: #ddd;
+    border: 2px solid #fff;
     border-radius: 50%;
     margin: 12px;
 }
@@ -84,9 +79,6 @@ button {
 /* Responsive styles for smaller screens */
 @media screen and (max-width: 1000px) {
     .center-nav {
-        position: static;
-        flex-direction: column;
-        display: none; /* Updated to hide by default */
         background-color: rgba(0, 0, 0, 0.6); /* Set the background for stacked items */
         width: 100%;
         text-align: center; /* Center the stacked items */
@@ -113,9 +105,11 @@ button {
 }
 
 .title-container {
+    color: #fff;
+    font-size: 3rem;
     position: absolute;
     bottom: 10px;
-    left: 10px;
+    left: 20px;
 }
 
 
@@ -128,16 +122,17 @@ button {
     margin-top: 20px;
     margin-left: 0; /* Removed padding */
     max-width: 1000px; /* Set max-width for the carousel */
-    margin-left: auto; /* Center the carousel under 1000px */
 }
 
 .carousel-item {
-    flex: 0 0 calc(25% - 10px); /* Adjusted width with 10px spacing */
-    border-radius: 15px;
+    flex: 0 0 calc(30% - 10px); /* Adjusted width with 10px spacing */
+    border-radius: 20px;
     margin-left: 20px;
+    border-radius: 10px; /* Slightly rounded corners */
     margin-bottom: 20px; /* Added margin between rows */
     position: relative;
     overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
 
@@ -190,7 +185,7 @@ button {
     bottom: 0;
     right: 0;
     width: 300px;
-    background-color: #fff;
+    background-color: #9ba48e;
     border-top-left-radius: 20px;
     overflow-y: auto;
     padding: 20px;
@@ -202,6 +197,7 @@ button {
 @media screen and (max-width: 1000px) {
 
     .article-aside {
+        position: revert;
         width: 100%; /* Set width to 100% when under 1000px */
         margin-top: 20px;
     }
@@ -210,7 +206,8 @@ button {
 
 /* Footer Styles */
 .footer {
-    background-color: #000;
+    position: relative;
+    background-color: #333;
     color: #fff;
     padding: 20px;
     text-align: center;
