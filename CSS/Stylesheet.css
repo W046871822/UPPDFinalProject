@@ -113,13 +113,15 @@ body {
     overflow: hidden;
     margin-top: 20px;
     margin-right: 0; /* Removed padding */
-    justify-content: space-between; /* Added to create space on the right for the aside */
+    max-width: 1000px; /* Set max-width for the carousel */
+    margin-left: auto; /* Center the carousel under 1000px */
 }
 
 .carousel-item {
-    flex: 0 0 calc(25% - 10px); /* Updated to make items smaller with space in between */
+    flex: 0 0 calc(25% - 10px); /* Adjusted width with 10px spacing */
     border-radius: 15px;
-    margin-right: 10px; /* Updated margin for spacing */
+    margin-right: 20px;
+    margin-bottom: 20px; /* Added margin between rows */
     position: relative;
     overflow: hidden;
 }
@@ -147,14 +149,15 @@ body {
 /* Adjustments for smaller screens */
 @media screen and (max-width: 1000px) {
     .content-carousel {
-        margin-right: 0;
-        justify-content: center; /* Center the items when under 1000px */
+        flex-wrap: wrap;
+        justify-content: center; /* Center items under 1000px */
+        margin-left: auto;
     }
 
+
     .carousel-item {
-        flex: 0 0 calc(50% - 10px); /* Updated to make items larger and centered */
+        flex: 0 0 calc(50% - 20px); /* Adjusted width with 20px spacing for smaller screens */
         margin-right: 0;
-        margin-bottom: 20px;
     }
 
     /* Adjust arrow positions for smaller screens */
