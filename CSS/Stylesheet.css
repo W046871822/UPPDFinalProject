@@ -8,11 +8,11 @@ body {
 
 a {
     text-decoration: none;
-    color: #006633;
+    color: #fff;
 }
 
 h1, h2, h3 {
-    color: #333; /* Darker text color for headings */
+    color: #fff; /* Darker text color for headings */
 }
 
 button {
@@ -28,7 +28,7 @@ button {
 /* NAV BAR STYLES */
 .topnav {
     overflow: hidden;
-    background-color: #006633;
+    background-color: #4966006d;
     position: fixed;
     top: 0;
     display: flex;
@@ -185,7 +185,7 @@ button {
     bottom: 0;
     right: 0;
     width: 300px;
-    background-color: #9ba48e;
+    background-color: #2a3f24;
     border-top-left-radius: 20px;
     overflow-y: auto;
     padding: 20px;
@@ -207,7 +207,7 @@ button {
 /* Footer Styles */
 .footer {
     position: relative;
-    background-color: #333;
+    background-color: #000000;
     color: #fff;
     padding: 20px;
     text-align: center;
