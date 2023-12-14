@@ -113,15 +113,17 @@ body {
     overflow: hidden;
     margin-top: 20px;
     margin-right: 0; /* Removed padding */
+    justify-content: space-between; /* Added to create space on the right for the aside */
 }
 
 .carousel-item {
-    flex: 0 0 25%;
+    flex: 0 0 calc(25% - 10px); /* Updated to make items smaller with space in between */
     border-radius: 15px;
-    margin-right: 20px;
+    margin-right: 10px; /* Updated margin for spacing */
     position: relative;
     overflow: hidden;
 }
+
 
 .carousel-item img {
     width: 100%;
@@ -146,6 +148,13 @@ body {
 @media screen and (max-width: 1000px) {
     .content-carousel {
         margin-right: 0;
+        justify-content: center; /* Center the items when under 1000px */
+    }
+
+    .carousel-item {
+        flex: 0 0 calc(50% - 10px); /* Updated to make items larger and centered */
+        margin-right: 0;
+        margin-bottom: 20px;
     }
 
     /* Adjust arrow positions for smaller screens */
@@ -174,19 +183,9 @@ body {
 
 /* Adjustments for smaller screens */
 @media screen and (max-width: 1000px) {
-    .content-carousel {
-        flex-wrap: wrap;
-    }
-
-    .carousel-item {
-        flex: 0 0 100%;
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
 
     .article-aside {
-        position: static;
-        width: 100%;
+        width: 100%; /* Set width to 100% when under 1000px */
         margin-top: 20px;
     }
 }
