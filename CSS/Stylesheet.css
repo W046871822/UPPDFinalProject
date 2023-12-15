@@ -80,7 +80,6 @@ button {
 /* Responsive styles for smaller screens */
 @media screen and (max-width: 1000px) {
     .center-nav {
-        background-color: rgba(0, 0, 0, 0.6); /* Set the background for stacked items */
         width: 100%;
         text-align: center; /* Center the stacked items */
     }
