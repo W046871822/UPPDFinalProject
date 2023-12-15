@@ -14,6 +14,51 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+<!-- Additional styles for the contact form -->
+<style>
+    /* Contact Form Styles */
+    .contact-form {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    textarea {
+        resize: vertical;
+    }
+
+    button {
+        background-color: #4CAF50;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+</style>
+
 </head>
 <body>
 <!-- NAV BAR -->
@@ -39,9 +84,63 @@
     </div>
 </div>
 <!-- Index Header -->
-<div class="index-header" style="background: url('https://images.unsplash.com/photo-1634688215810-ac046bac67ea?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat 50% 50%; background-size: cover;">
+<div class="index-header" style="background: url('https://unsplash.com/photos/a-rocky-hill-with-trees-on-top-of-it-Lh3G-wqgzu8') no-repeat 50% 50%; background-size: cover;">
     <div class="title-container">
         <h1 class="title" style="color: #fff; font-size: 60px; margin-left: 30px; margin-bottom: 20px;">
             <br>Contact Us</h1>
     </div>
 </div>
+
+<!-- Contact Form Section -->
+<div class="contact-form">
+    <h2>Contact Us</h2>
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+
+
+
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-links">
+        <a href="AboutUs.html">About Us</a>
+        <a href="Articles.html">Articles</a>
+        <a href="GetInvolved.html">Get Involved</a>
+        <a href="Contact.html">Contact Us</a>
+        <!-- Add more links as needed -->
+    </div>
+    <p class="footer-text">© 2023 Sustainability Website. All Rights Reserved.</p>
+</footer>
+
+
+<script>
+    // Your existing script for the navigation bar
+    function myFunction() {
+        var x = document.getElementById("centerNav");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
+
+</body>
