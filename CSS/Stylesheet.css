@@ -121,7 +121,6 @@ button {
     overflow: hidden;
     margin-top: 20px;
     margin-left: 0; /* Removed padding */
-    max-width: 1000px; /* Set max-width for the carousel */
 }
 
 .carousel-item {
