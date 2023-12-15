@@ -7,10 +7,16 @@ body {
     z-index: 1;
     }
 
+    h2{
+        font-size: 20px;
+    }
+
 a {
     text-decoration: none;
     color: #fff;
 }
+
+
 
 h1, h2, h3 {
     color: #fff; /* Darker text color for headings */
@@ -126,6 +132,7 @@ button {
 .carousel-item {
     flex: 0 0 calc(30% - 10px); /* Adjusted width with 10px spacing */
     max-width: 200px;
+    height: 200px;
     border-radius: 20px;
     margin-left: 20px;
     border-radius: 10px; /* Slightly rounded corners */
