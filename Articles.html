@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Articles</title>
     <link rel="icon" type="image/png" href="path/to/favicon.png">
     <link rel="stylesheet" href="CSS/Stylesheet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,31 +13,6 @@
 <!-- Bootstrap JS and jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-<!-- Additional styles for the gallery -->
-<style>
-    /* Gallery Styles */
-    .gallery {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin: 20px 0;
-    }
-
-    .gallery-item {
-        flex: 0 0 calc(30% - 10px);
-        margin-bottom: 20px;
-        position: relative;
-        overflow: hidden;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    }
-
-    .gallery-item img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-</style>
 
 </head>
 <body>
@@ -64,40 +39,37 @@
     </div>
 </div>
 <!-- Index Header -->
-<div class="index-header" style="background: url('https://images.unsplash.com/photo-1634688215810-ac046bac67ea?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat 50% 50%; background-size: cover;">
+<div class="index-header" style="background: url('https://unsplash.com/photos/green-trees-beside-river-during-daytime-EKbYkPzpAFI') no-repeat 50% 50%; background-size: cover;">
     <div class="title-container">
         <h1 class="title" style="color: #fff; font-size: 60px; margin-left: 30px; margin-bottom: 20px;">
-            <br>Get Involved</h1>
-        </div>
+            <br>Articles</h1>    
     </div>
+</div>
 
 
-            <!-- Gallery Section -->
-    <div class="gallery">
-        <!-- Add your volunteer images here -->
-        <div class="gallery-item">
-            <img src="https://glampinghub.com/blog/wp-content/uploads/2021/02/GHVolunteering.png" alt="Volunteer 1">
-        </div>
-        <div class="gallery-item">
-            <img src="https://upgradedpoints.com/wp-content/uploads/2019/08/Volunteering.jpg" alt="Volunteer 2">
-        </div>
-        <div class="gallery-item">
-            <img src="https://parkpride.org/wp-content/uploads/2019/02/IMG_4332.jpeg" alt="Volunteer 3">
-        </div>
-        <div class="gallery-item">
-            <img src="https://www.kayavolunteer.com/wp-content/uploads/2017/03/Agroforestry-Conservation-Peru.jpg" alt="Volunteer 4">
-        </div>
-        <!-- Add more volunteer images as needed -->
-    </div>
 
-    <!-- Quick Links to Volunteer Opportunities Section -->
-        <h2>Quick Links to Volunteer Opportunities</h2>
-        <ul>
-            <li><a href="#link1">Climate Change Advocates</a></li>
-            <li><a href="#link2">Green Energy Initiatives</a></li>
-            <li><a href="#link3">Environmental Cleanup Projects</a></li>
-            <!-- Add more quick links as needed -->
-        </ul>
+            <div class="content-carousel">
+                <a href="https://www.ecofriendlyhabits.com/how-to-be-eco-friendly/" class="carousel-item" id="Content1">
+                    <img src="https://www.ecofriendlyhabits.com/wp-content/uploads/2019/08/how-to-be-more-eco-friendly-1080x608.jpg" alt="Content 1">
+                    <div class="content-header">
+                        <h2>How to Be More Eco-Friendly</h2>
+                        <p>105 Ways to Live an Environmentally Conscious Lifestyle</p>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="content-carousel">
+                <a href="https://www.ecofriendlyhabits.com/zero-waste-living/" class="carousel-item" id="Content1">
+                    <img src="https://www.recyclingbins.co.uk/media/wysiwyg/Zero_Waste_Challenge.jpg" alt="Content 1">
+                    <div class="content-header">
+                        <h2>How to Be More Eco-Friendly</h2>
+                        <p>105 Ways to Live an Environmentally Conscious Lifestyle</p>
+                    </div>
+                </a>
+            </div>
+</div>
+
 
 
 
@@ -125,4 +97,5 @@
         }
     }
 </script>
+
 </body>

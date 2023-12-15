@@ -14,6 +14,19 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+<style>
+        .about-us-section {
+            background-color: #fff;
+            padding: 40px 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: justify;
+        }
+</style>
+
 </head>
 <body>
 <!-- NAV BAR -->
@@ -45,3 +58,51 @@
             <br>About Us</h1>
     </div>
 </div>
+
+<!-- About Us Section -->
+<div class="about-us-section">
+    <div class="container">
+        <h2>Welcome to Green Life</h2>
+        <p>
+            Green Life is a community dedicated to promoting sustainability, environmental awareness, and positive change. Our mission is to inspire and empower individuals to take action towards a greener and more sustainable future.
+        </p>
+
+        <h3>Our Vision</h3>
+        <p>
+            We envision a world where people live in harmony with nature, adopting eco-friendly practices and making conscious choices to preserve the planet for future generations.
+        </p>
+
+        <h3>What We Do</h3>
+        <p>
+            At Green Life, we engage in various initiatives, including organizing events, sharing informative articles, and providing opportunities for individuals to get involved in environmental causes. Together, we can make a difference.
+        </p>
+    </div>
+</div>
+
+
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-links">
+        <a href="AboutUs.html">About Us</a>
+        <a href="Articles.html">Articles</a>
+        <a href="GetInvolved.html">Get Involved</a>
+        <a href="Contact.html">Contact Us</a>
+        <!-- Add more links as needed -->
+    </div>
+    <p class="footer-text">© 2023 Sustainability Website. All Rights Reserved.</p>
+</footer>
+
+
+<script>
+    // Your existing script for the navigation bar
+    function myFunction() {
+        var x = document.getElementById("centerNav");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
+</body>
