@@ -126,6 +126,7 @@ button {
 
 .carousel-item {
     flex: 0 0 calc(30% - 10px); /* Adjusted width with 10px spacing */
+    max-width: 200px;
     border-radius: 20px;
     margin-left: 20px;
     border-radius: 10px; /* Slightly rounded corners */
@@ -167,6 +168,7 @@ button {
     .carousel-item {
         flex: 0 0 calc(50% - 20px); /* Adjusted width with 20px spacing for smaller screens */
         margin-right: 0;
+        max-width: 250px;
     }
 
     /* Adjust arrow positions for smaller screens */
